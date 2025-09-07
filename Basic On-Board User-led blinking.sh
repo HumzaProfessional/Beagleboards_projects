@@ -5,8 +5,8 @@
 LED="/sys/class/leds/beaglebone:green:usr0/brightness" # sets 
 
 while true; do
-  echo 1 | sudo tee $LED > /dev/null #
+  echo 1 | sudo tee $LED > /dev/null #change the of the led brightness to "on" 
   sleep 1 # to give a simple delay
-  echo 0 | sudo tee $LED > /dev/null
+  echo 0 | sudo tee $LED > /dev/null #change the of the led brightness to "on" 
   sleep 1
 done
